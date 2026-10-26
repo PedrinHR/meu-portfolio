@@ -1,0 +1,134 @@
+
+.gestao-pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 24px 80px;
+  color: #f8fafc;
+}
+
+.gestao-voltar {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.gestao-pagina h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.gestao-introducao {
+  max-width: 800px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.gestao-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0 45px;
+}
+
+.gestao-tecnologias span {
+  background: #26364c;
+  color: #38bdf8;
+  padding: 9px 14px;
+  border-radius: 6px;
+}
+
+.gestao-pagina h2 {
+  margin: 35px 0 20px;
+}
+
+.gestao-galeria {
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.gestao-imagem-principal img {
+  display: block;
+  width: 100%;
+  max-height: 550px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.gestao-galeria h3 {
+  margin-top: 20px;
+}
+
+.gestao-galeria p {
+  color: #cbd5e1;
+}
+
+.gestao-miniaturas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.gestao-miniaturas button {
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.gestao-miniaturas button.ativa {
+  border-color: #38bdf8;
+}
+
+.gestao-miniaturas img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.gestao-funcionalidades {
+  width: fit-content;
+  max-width: 100%;
+  margin: 20px auto;
+  padding-left: 25px;
+  line-height: 2;
+  color: #cbd5e1;
+  text-align: left;
+}
+
+
+.gestao-github {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 22px;
+  border-radius: 8px;
+  background: #0284c7;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.gestao-github:hover {
+  background: #0369a1;
+}
+
+@media (max-width: 600px) {
+  .gestao-pagina {
+    padding: 30px 16px;
+  }
+
+  .gestao-pagina h1 {
+    font-size: 1.8rem;
+  }
+
+  .gestao-miniaturas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
